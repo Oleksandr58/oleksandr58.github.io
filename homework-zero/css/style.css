@@ -1,0 +1,35 @@
+h1 {
+	font: bold 40px Arial;
+	text-align: center;
+	margin: 0;
+}
+ul {
+	text-align: center;
+	list-style-type: none;
+	margin-top: 60px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font: italic 25px Arial;
+}
+a:hover {
+	text-decoration: underline;
+}
+ul :last-child {
+	margin-top: 40px;
+}
+footer {
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	font-family: Lobster;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	padding-top: 5px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding-bottom: 5px;
+}

@@ -1,0 +1,51 @@
+header, aside, main, footer {
+  border: 1px solid black;
+}
+header, footer {
+  min-height: 100px;
+}
+main, aside {
+  margin: 5px 0;
+}
+aside, main {
+  display: inline-block;
+  height: 500px;
+}
+aside {
+  width: 25%;
+}
+#left {
+  float: left;
+}
+main {
+  width: 48%;
+  margin-left: 0.8%;
+}
+#right {
+  float: right;
+}
+footer {
+  clear: both;
+}
+
+
+/* Further part doesn't apply this task*/
+ul {
+	text-align: center;
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+	padding: 10px;
+	border: solid 1px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font: italic 25px Arial;
+}
+li:hover {
+	background: rgba(100,100,100,0.2);
+	cursor: pointer;
+}
+

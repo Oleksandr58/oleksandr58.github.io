@@ -1,0 +1,51 @@
+#first, #second {
+  height: 250px;
+  border: blue 2px solid;
+  border-radius: 5%;
+}
+#first {
+  float: left;
+}
+.top, .bottom {
+  height: 250px;
+  text-align: justify;
+  border: 1px solid black;
+}
+.top {
+  margin-left: 280px;
+}
+.clear {
+  clear: both;
+  margin-top: 50px;
+}
+.bottom {
+  margin-right: 280px;
+}
+#second {
+  float: right;
+}
+#last {
+  width: 100%;
+  border-radius: 2%;
+}
+
+
+/* Further part doesn't apply this task*/
+ul {
+	text-align: center;
+	list-style-type: none;
+}
+li {
+	display: inline-block;
+	padding: 10px;
+	border: solid 1px;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font: italic 25px Arial;
+}
+li:hover {
+	background: rgba(100,100,100,0.2);
+	cursor: pointer;
+}
