@@ -1,0 +1,437 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.signUp {
+  width: 46.5%;
+  margin: 20px 0 0 2.5%;
+  background-color: #f2f5f8;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  float: left; }
+  .signUp__header {
+    background: url(../img/Sign_Up_Form.jpg) no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    height: 200px;
+    color: white;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Cabin; }
+    .signUp__header--registered {
+      position: absolute;
+      top: 12.5%;
+      right: 3.9%;
+      font-size: 20px; }
+    .signUp__header--signUp {
+      font-size: 50px; }
+  .signUp__form {
+    text-align: center; }
+    .signUp__form--login {
+      background-image: url(../img/Login.jpg);
+      background-repeat: no-repeat;
+      background-position: 12px;
+      width: 84%;
+      height: 30px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      padding: 10px 0 10px 40px;
+      margin: 4%;
+      margin-top: 6%;
+      border: #c6ccd2 2px solid;
+      outline: none; }
+      .signUp__form--login::-webkit-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--login::-moz-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--login:-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--login::-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--login::placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+    .signUp__form--password {
+      background-image: url(../img/Password.jpg);
+      background-repeat: no-repeat;
+      background-position: 12px;
+      width: 84%;
+      height: 30px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      padding: 10px 0 10px 40px;
+      margin: 0 4% 3% 4%;
+      border: #c6ccd2 2px solid;
+      outline: none; }
+      .signUp__form--password::-webkit-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--password::-moz-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--password:-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--password::-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signUp__form--password::placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+    .signUp__form--forgot {
+      font-style: Cabin;
+      font-weight: bold;
+      font-size: 16px;
+      color: #b4bbc2; }
+    .signUp__form--signUpBtn {
+      width: 91%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      border: none;
+      background-color: #65abd0;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
+    .signUp__form--or {
+      overflow: hidden;
+      width: 91%;
+      height: 52px;
+      margin: 3% auto;
+      margin-bottom: 0;
+      font-family: Cabin;
+      font-size: 16px;
+      font-weight: bold;
+      color: #c6ccd2; }
+      .signUp__form--or::before, .signUp__form--or::after {
+        content: '';
+        /* делаем линию строчно-блочной */
+        display: inline-block;
+        /* выравниваем вертикально по середине */
+        vertical-align: middle;
+        /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        /* установка ширины в 100% делает линию равной ширине тега заголовка
+				** благодаря этому линия заполнит все свободное пространство
+				** слева и справа от текста
+				*/
+        width: 100%;
+        height: 3px;
+        background: #c6ccd2;
+        /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+				** благодаря этому создается нужный отступ между линиями и текстом
+				*/
+        border: solid #f2f5f8;
+        border-width: 0 10px; }
+      .signUp__form--or::before {
+        margin-left: -100%; }
+      .signUp__form--or::after {
+        margin-right: -100%; }
+    .signUp__form--facebookBtn {
+      width: 42%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      margin-top: 0;
+      border: none;
+      background-color: #3162a2;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
+    .signUp__form--twitterBtn {
+      width: 42%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      margin-top: 0;
+      border: none;
+      background-color: #65abd0;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
+
+.signIn {
+  width: 46.5%;
+  margin: 20px 2.5% 0 0;
+  background-color: #f2f5f8;
+  -webkit-border-radius: 7px;
+          border-radius: 7px;
+  float: right; }
+  .signIn__header {
+    background: url(../img/Sign_In_Form.jpg) no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    height: 200px;
+    color: white;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Cabin; }
+    .signIn__header--registered {
+      position: absolute;
+      top: 12.5%;
+      right: 3.9%;
+      font-size: 20px; }
+    .signIn__header--signUp {
+      font-size: 50px; }
+  .signIn__form {
+    text-align: center; }
+    .signIn__form--login {
+      background-image: url(../img/Login.jpg);
+      background-repeat: no-repeat;
+      background-position: 12px;
+      width: 84%;
+      height: 30px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      padding: 10px 0 10px 40px;
+      margin: 4%;
+      margin-top: 6%;
+      border: #c6ccd2 2px solid;
+      outline: none; }
+      .signIn__form--login::-webkit-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--login::-moz-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--login:-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--login::-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--login::placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+    .signIn__form--password {
+      background-image: url(../img/Password.jpg);
+      background-repeat: no-repeat;
+      background-position: 12px;
+      width: 84%;
+      height: 30px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      padding: 10px 0 10px 40px;
+      margin: 0 4% 3% 4%;
+      border: #c6ccd2 2px solid;
+      outline: none; }
+      .signIn__form--password::-webkit-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--password::-moz-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--password:-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--password::-ms-input-placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+      .signIn__form--password::placeholder {
+        font-family: Cabin;
+        font-weight: bold;
+        font-size: 16px;
+        color: #c6ccd2; }
+    .signIn__form--rememberText {
+      font-style: Cabin;
+      font-weight: bold;
+      font-size: 16px;
+      color: #b4bbc2;
+      text-align: left;
+      display: block; }
+    .signIn__form--rememberInput {
+      margin-left: 5%;
+      float: left;
+      -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+              transform: scale(1.2);
+      outline: none;
+      border: none;
+      -webkit-border-radius: 5%;
+              border-radius: 5%; }
+      .signIn__form--rememberInput:checked {
+        background-color: green; }
+    .signIn__form--signInBtn {
+      width: 91%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      border: none;
+      background-color: #24aa98;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
+    .signIn__form--or {
+      overflow: hidden;
+      width: 91%;
+      height: 52px;
+      margin: 3% auto;
+      margin-bottom: 0;
+      font-family: Cabin;
+      font-size: 16px;
+      font-weight: bold;
+      color: #c6ccd2; }
+      .signIn__form--or::before, .signIn__form--or::after {
+        content: '';
+        /* делаем линию строчно-блочной */
+        display: inline-block;
+        /* выравниваем вертикально по середине */
+        vertical-align: middle;
+        /* не позволяем ширине превысить 100% (будет добавлен бордюр) */
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        /* установка ширины в 100% делает линию равной ширине тега заголовка
+				  ** благодаря этому линия заполнит все свободное пространство
+				  ** слева и справа от текста
+				  */
+        width: 100%;
+        height: 3px;
+        background: #c6ccd2;
+        /* добавляем к линии левый и правый бордюр цветом основного фона заголовка
+				  ** благодаря этому создается нужный отступ между линиями и текстом
+				  */
+        border: solid #f2f5f8;
+        border-width: 0 10px; }
+      .signIn__form--or::before {
+        margin-left: -100%; }
+      .signIn__form--or::after {
+        margin-right: -100%; }
+    .signIn__form--facebookBtn {
+      width: 42%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      margin-top: 0;
+      border: none;
+      background-color: #3162a2;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
+    .signIn__form--twitterBtn {
+      width: 42%;
+      height: 52px;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      margin: 3%;
+      margin-top: 0;
+      border: none;
+      background-color: #65abd0;
+      color: white;
+      font-style: Cabin;
+      font-size: 20px;
+      outline: none; }
