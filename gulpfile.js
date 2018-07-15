@@ -50,6 +50,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('watch', ['browser-sync', 'scss'], function() {
+	gulp.watch('app/index.html', ['scss']);
 	gulp.watch('app/scss/**/*.scss', ['scss']);
 	// gulp.watch('app/index.html', browserSync.reload);
 	gulp.watch('app/styles/**/*.css', browserSync.reload);
